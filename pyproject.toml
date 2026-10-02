@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disease-brain-region-signature"
+version = "0.1.0"
+description = "Do GWAS-associated genes for a neurological disease show a regional expression signature in the Allen Human Brain Atlas?"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "scipy", "statsmodels", "matplotlib", "seaborn", "requests", "abagen"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

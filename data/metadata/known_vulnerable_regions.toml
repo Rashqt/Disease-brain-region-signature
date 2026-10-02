@@ -1,0 +1,12 @@
+# Independent biological knowledge, kept SEPARATE from the computational result.
+# Fill this in from a cited scientific source (review article / neuropathology paper) BEFORE
+# running `compare`. `compare` refuses to run without a source and at least one region.
+# Do not edit this after seeing the signature results.
+
+source = ""            # full citation + DOI/PMID of where the region list comes from
+accessed = ""          # date you read it
+
+# [[region]]
+# name = "free-text name as used by the source"
+# atlas_acronyms = ["..."]   # Allen structure acronyms (from Ontology.csv) that correspond to it
+# note = "how well this maps to Allen structures"
